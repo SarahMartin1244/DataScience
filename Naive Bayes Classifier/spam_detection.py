@@ -16,17 +16,17 @@ with open(os.path.join(current_dir, 'Naive Bayes Classifier', 'vectorizer.pkl'),
 # Create the Flask app
 app = Flask(__name__)
 
-# Define the HTML content
+# HTML content
 html_content = """
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Spam Detection Web App</title>
+    <title>Spam Detection</title>
 </head>
 <body>
-    <h1>Spam Detection Web App</h1>
+    <h1>Spam Detection</h1>
     <form action="/predict" method="post">
-        <textarea name="text" rows="5" cols="40" placeholder="Enter text here..."></textarea>
+        <textarea name="text" rows="10" cols="40" placeholder="Enter text here to see if its spam or ham (not spam)"></textarea>
         <br>
         <input type="submit" value="Submit">
     </form>
